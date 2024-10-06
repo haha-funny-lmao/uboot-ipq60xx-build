@@ -2,26 +2,28 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>固件更新</title>
+		<title>Firmware update</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="shortcut icon" href="f.png">
 	</head>
 	<body>
 		<div id="m">
-			<h1>固件更新</h1>
-			<p>此页面用于路由器操作系统的固件更新<br>请选择要更新的路由器固件文件并点击 <strong>更新固件</strong> 按钮。</p>
+			<h1>FIRMWARE UPDATE</h1>
+			<p>You are going to update <strong>firmware</strong> on the device.<br>Please, choose file from your local hard drive and click <strong>Update firmware</strong> button.</p>
 			<form method="post" enctype="multipart/form-data">
 				<input type="file" name="firmware">
-				<input type="submit" value="更新固件">
+				<input type="submit" value="Update firmware">
 			</form>
 			<div class="i w red">
-				<strong>提醒：</strong>
+				<strong>WARNINGS：</strong>
 				<ul>
-					<li>固件更新支持openwrt factory格式和京东云无线宝原厂固件格式。</li>
-					<li>在更新期间不要断开路由器电源，如果更新顺利，设备将自动重启。</li>
+					<li>This U-Boot version supports both OpenWrt 'squashfs-factory' firmware and JD-Cloud firmware</li>
+					<li>do not power off the device during update</li>
+					<li>if everything goes well, the device will restart</li>
+					<li>you can upload whatever you want, so be sure that you choose proper firmware image for your device</li>
 				</ul>
 			</div>
 		</div>
-		<div id="f">version:23.05.28</div>
+		<div id="f">Onigiri-Boot: 24.10.07</div>
 	</body>
 </html>
